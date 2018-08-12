@@ -1,0 +1,11 @@
+[package]
+name = "ffi-demo"
+version = "0.1.0"
+authors = ["Garrett Squire <garrettsquire@gmail.com>"]
+
+[dependencies]
+libc = "0.2"
+
+[build-dependencies]
+bindgen = "0.37"
+cc = "1.0"
