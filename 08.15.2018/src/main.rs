@@ -16,7 +16,7 @@ fn main() {
         // Allocate a vector to hold the path.
         let mut path: Vec<i8> = vec![0; (len + 1) as usize];
         let res =
-            self::wai_getExecutablePath(path.as_mut_ptr() as *mut c_char, len + 1, ptr::null_mut());
+            self::wai_getExecutablePath(path.as_mut_ptr() as *mut c_char, len, ptr::null_mut());
 
         // If our result is -1, then bail early.
         if res == -1 {
